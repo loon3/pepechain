@@ -43,25 +43,43 @@ function download(name, url) {
 function fetchOne() {
   setTimeout(function() {
     if (downloadQueue.length > 0) {
+          
       var curDl = downloadQueue.splice(0,1)[0]
       var udl = url.parse(curDl.url)
 
-      console.log("> Downloading '" + curDl.name + "' as a " + path.extname(udl.path))
+      var imagePath = "./pepe_directory/"+(curDl.name + path.extname(udl.path))
 
+      fs.access(imagePath, fs.F_OK, function(err) {
+          
+            if (!err) {
+                // Image exists
+                
+                console.log("> " + curDl.name + path.extname(udl.path) + " exists!")
+                fetchOne()
+                
+            } else {
+                // Image doesn't exist
+                
+                console.log("> Downloading '" + curDl.name + path.extname(udl.path))
+                
+                http.request(udl, function(response) {
+                    var data = new Buffer(0)
 
+                    response.on('data', function (chunk) {
+                      data = Buffer.concat([data, chunk])
+                    })
 
-      http.request(udl, function(response) {
-        var data = new Buffer(0)
-
-        response.on('data', function (chunk) {
-          data = Buffer.concat([data, chunk])
-        })
-
-        response.on('end', function () {
-          fs.writeFileSync('./pepe_directory/' + curDl.name + path.extname(udl.path), data)
-          fetchOne()
-        })
-      }).end()
+                    response.on('end', function () {
+                      fs.writeFileSync('./pepe_directory/' + curDl.name + path.extname(udl.path), data)
+                      fetchOne()
+                    })
+                }).end()
+       
+                
+            }
+          
+      });
+    
     }
   }, 100)
 }
