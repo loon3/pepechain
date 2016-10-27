@@ -91,9 +91,9 @@ foreach ($asset_name_hash_array as $asset_name_hashBE) {
 }
 $asset_name_hash_root = merkleroot($asset_name_hash_arrayBEbinary);
 
-echo "Count: ".count($img_hash_array)."<br>";
-echo "Asset Hash Merkle Root: ".bin2hex(binFlipByteOrder($asset_name_hash_root))."<br>";
-echo "Image Hash Merkle Root: ".bin2hex(binFlipByteOrder($img_hash_root))."<br>";
+echo "Count: ".count($img_hash_array).PHP_EOL;
+echo "Asset Hash Merkle Root: ".bin2hex(binFlipByteOrder($asset_name_hash_root)).PHP_EOL;
+echo "Image Hash Merkle Root: ".bin2hex(binFlipByteOrder($img_hash_root)).PHP_EOL;
 
 
 
