@@ -31,5 +31,10 @@ Count: 338
 Asset Hash Merkle Root: f503cd2c059c259bced2697df34b8c924e16e426bae187bd75c5e9e437097f6c
 Image Hash Merkle Root: 73a061ce269fb2d733a595aef76b4f9ebb8a6c6ad05c948dfbb8475fa88e7390
 ````
+````
+Count: 349
+Asset Hash Merkle Root: fdddb86f07d90521d28ca89694a40e7287caad8c49727763634b471693cba85e
+Image Hash Merkle Root: d50501a012a8a567c0e3646c548f6d29a0ceee1dbeac0539a472365ac666bc4e
+````
 
-*Hashes Updated 11-02-16*
+*Hashes Updated 05-Nov-16*
