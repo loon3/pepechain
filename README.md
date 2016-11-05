@@ -7,7 +7,8 @@ How to verify Rare Pepe integrity:
 3. Open Terminal, go to the Pepe Chain root directory
 4. Type ```node scrape_pepe_directory``` and press enter
 5. After all images are downloaded, type ```php verify.php``` and press enter
-6. Compare asset and image merkle roots with published values.
+6. Compare asset and image merkle roots with published values.  
+7. To compare with values listed below, specify count by typing ```php verify.php 215```, ```php verify.php 283```, etc.
 
 
 
