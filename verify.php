@@ -55,6 +55,12 @@ function merkleroot($txids) {
 $html = file_get_contents('pepe_directory/pepelist.json');
 $json = json_decode($html, true);
 
+if(isset($argv[1])){
+    $height = $argv[1];
+} else {
+    $height == false;
+}
+
 $img_hash_array = [];
 $asset_list = [];
     
@@ -75,6 +81,11 @@ foreach($json as $key => $value) {
     
     $i++;
     
+}
+
+if($height !== false){
+    $img_hash_array = array_slice($img_hash_array, 0, $height);
+    $asset_name_hash_array = array_slice($asset_name_hash_array, 0, $height);
 }
 
 $img_hash_arrayBEbinary = [];
@@ -99,6 +110,3 @@ echo "Image Hash Merkle Root: ".bin2hex(binFlipByteOrder($img_hash_root)).PHP_EO
 
 
 ?>
-
-
-
