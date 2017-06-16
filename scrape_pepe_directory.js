@@ -47,7 +47,7 @@ function fetchOne() {
       var curDl = downloadQueue.splice(0,1)[0]
       var udl = url.parse(curDl.url)
 
-      var imagePath = "./pepe_directory/"+(curDl.name + path.extname(udl.path))
+      var imagePath = "./pepe_images/"+(curDl.name + path.extname(udl.path))
 
       fs.access(imagePath, fs.F_OK, function(err) {
           
@@ -70,7 +70,7 @@ function fetchOne() {
                     })
 
                     response.on('end', function () {
-                      fs.writeFileSync('./pepe_directory/' + curDl.name + path.extname(udl.path), data)
+                      fs.writeFileSync('./pepe_images/' + curDl.name + path.extname(udl.path), data)
                       fetchOne()
                     })
                 }).end()
