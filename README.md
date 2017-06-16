@@ -13,15 +13,9 @@ How to verify Rare Pepe integrity:
 
 
 ````
-<<<<<<< Updated upstream
-Count: 395
-Asset Hash Merkle Root: 23117973a5aa49b79dc28466493fa086a6ea0d8a66c39762ee510b2476b63062
-Image Hash Merkle Root: 7b6180568858d012fd4a2cf88a57199ae95a9ba26418b37bdfe8bdb1a99cc37b
-=======
 Count: 999
 Asset Hash Merkle Root: 3425cdb30ba3b2be84ddefe231da2eae11dca08675493cd5aa8b8e3ba1cda5ed
 Image Hash Merkle Root: 8587d3e76980f4f398e705509d99a2c7d18a1fc604115ed016df4069d62a22aa
->>>>>>> Stashed changes
 ````
 
 *Hashes Updated 15-Jun-17*
