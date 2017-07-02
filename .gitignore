@@ -1,9 +1,5 @@
 .DS_Store
-
-# exclude everything
 pepe_directory/*
 pepe_images/*
-
-# exception to the rule
 !pepe_directory/.gitkeep 
 !pepe_images/.gitkeep 
