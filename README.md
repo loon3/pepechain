@@ -17,4 +17,4 @@ Asset Hash Merkle Root: 0da5d2e6f8061c97ac488837254180219141f66a79df3563c1eb787c
 Image Hash Merkle Root: 958242a47e963b39e827bd164ac40c3eafd2591e964504a22d5ff183dc719213
 ````
 
-*Hashes Updated 2-Ju1-17*
+*Hashes Updated 2-Jul-17*
