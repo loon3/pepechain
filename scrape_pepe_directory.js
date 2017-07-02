@@ -8,6 +8,14 @@ var options = {
   path: '/pepelist.json'
 };
 
+if (!fs.existsSync("./pepe_directory")){
+    fs.mkdirSync("./pepe_directory");
+}
+
+if (!fs.existsSync("./pepe_images")){
+    fs.mkdirSync("./pepe_images");
+}
+
 callback = function(response) {
   var str = ''
 

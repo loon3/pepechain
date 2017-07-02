@@ -1,5 +1,3 @@
 .DS_Store
 pepe_directory/*
 pepe_images/*
-!pepe_directory/.gitkeep 
-!pepe_images/.gitkeep 
