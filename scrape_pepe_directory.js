@@ -4,8 +4,8 @@ const url = require('url')
 const path = require('path')
 
 var options = {
-  host: 'rarepepedirectory.com',
-  path: '/json/pepelist.json'
+  host: 'chiguireitor.com',
+  path: '/pepelist.json'
 };
 
 callback = function(response) {
