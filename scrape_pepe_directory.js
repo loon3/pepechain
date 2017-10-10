@@ -68,7 +68,7 @@ function fetchOne() {
             } else {
                 // Image doesn't exist
                 
-                console.log("> Downloading '" + curDl.name + path.extname(udl.path))
+                console.log("> Downloading " + curDl.name + path.extname(udl.path))
                 
                 http.request(udl, function(response) {
                     var data = new Buffer(0)
