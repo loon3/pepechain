@@ -1,2 +1,6 @@
 .DS_Store
 pepe_images/*
+
+!pepe_images/RAREPEPE.jpg
+!pepe_images/GOXPEPE.jpg
+!pepe_images/SHITCOINCARD.jpg
