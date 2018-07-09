@@ -3,39 +3,21 @@ const fs = require('fs')
 const url = require('url')
 const path = require('path')
 
-var options = {
-  host: 'chiguireitor.com',
-  path: '/pepelist.json'
-};
-
-if (!fs.existsSync("./pepe_directory")){
-    fs.mkdirSync("./pepe_directory");
-}
-
 if (!fs.existsSync("./pepe_images")){
     fs.mkdirSync("./pepe_images");
 }
 
 callback = function(response) {
-  var str = ''
-
-  //another chunk of data has been recieved, so append it to `str`
-  response.on('data', function (chunk) {
-    str += chunk
-  })
-
-  //the whole response has been recieved, so we just print it out here
-  response.on('end', function () {
-    fs.writeFileSync('./pepe_directory/pepelist.json', str)
-    var ob = JSON.parse(str)
-
+    var ob = JSON.parse(response)
     for (x in ob) {
       download(x, ob[x])
     }
-  })
 }
 
-http.request(options, callback).end()
+fs.readFile('pepe_directory/pepelist.json', 'utf8', function (err, data) {
+  if (err) throw err
+  callback(data)
+});
 
 var downloadQueue = []
 var reqsStarted = false
