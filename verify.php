@@ -119,7 +119,8 @@ if($missing == true){
     echo "Asset Hash Merkle Root: ".bin2hex(binFlipByteOrder($asset_name_hash_root)).PHP_EOL;
     echo "Image Hash Merkle Root: ".bin2hex(binFlipByteOrder($img_hash_root)).PHP_EOL;
 
-    //print_r($img_hash_array);
+    //echo "A:".base64_encode(pack('H*',bin2hex(binFlipByteOrder($asset_name_hash_root))));
+    //echo "I:".base64_encode(pack('H*',bin2hex(binFlipByteOrder($img_hash_root))));
     
 }
 
