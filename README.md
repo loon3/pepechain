@@ -31,9 +31,26 @@ Asset Hash Merkle Root: 1c3279fbac50080f3960015ded7a551dc1d4517d63ca8568963add9d
 Image Hash Merkle Root: ec0f2c6ea577c664a3176d7302f419c4af99dc7a1aff7a13cb40efcffd49184d
 ````
 ````
-Count: 1774
+Count: 1774 (final)
 Asset Hash Merkle Root: c4d404362e6ad7e0cc69290b52904bc8eacc546b2296099667665c9357ed7407
 Image Hash Merkle Root: 3a0ba2a9f0fea161a496abdccdc6c53816832e154f6f252d4d2ec47d49345b22
 ````
+---
 
-*Hashes Updated 16-Apr-18*
+#### Final merkle root broadcasts from RAREPEPE genesis address
+
+##### Asset Hash*
+````
+A:xNQENi5q1+DMaSkLUpBLyOrMVGsilgmWZ2Zck1ftdAc=
+````
+https://xchain.io/tx/78b6fc8c0476cb67e0026b14162141de7cc44f1ef24a73a8f58e78ff82100519
+
+
+##### Image Hash*
+````
+I:OguiqfD+oWGklqvczcbFOBaDLhVPbyUtTS7EfUk0WyI=
+````
+https://xchain.io/tx/0a7fde9001e453b7c6fe28df7143e0eb6a521301f6c88b9ea7d3616e3607d865
+
+_*preceded by A: or I: to identify hash, presented in Base64_
+
